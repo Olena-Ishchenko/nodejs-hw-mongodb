@@ -40,7 +40,7 @@ router.post(
 router.post('/logout', authenticate, ctrlWrapper(logoutUserController));
 
 router.post(
-  '/request-reset-email',
+  '/send-reset-email',
   validateBody(requestResetEmailSchema),
   ctrlWrapper(requestResetEmailController),
 );
